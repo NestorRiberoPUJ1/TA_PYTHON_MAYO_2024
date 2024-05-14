@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {   
+    outline-color: fuchsia;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    height: 64px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+nav h1{
+    color: white;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+
+    gap:16px;
+}
+
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+button{
+    background-color: rgb(0, 191, 255);
+    color: white;
+    height: 24px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: none;
+}
