@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-header {
+    height: 48px;
+    background-color: dodgerblue;
+    position: relative;
+}
+
+.card-body {
+    height: 128px;
+    background-color: lavender;
+    padding-top: 32px;
+}
+
+.profile-picture{
+    position: absolute;
+    bottom: -24px;
+    left: 12px;
+    height: 48px;
+    width: 48px;
+    background-color: goldenrod;
+    padding: 8px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
