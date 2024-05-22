@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: lightgray;
+    }
+
+    .bgPrimary {
+        background-color: dodgerblue;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(95, 95, 95);
+    }
+
+    .bgPrimary {
+        background-color: darkblue;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-izquierdo {
+    background-color: aqua;
+    flex:4;
+}
+
+.contenido-principal {
+    background-color: rgb(89, 255, 0);
+    flex: 1;
+}
