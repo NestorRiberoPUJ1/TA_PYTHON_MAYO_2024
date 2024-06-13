@@ -34,9 +34,38 @@ cantantes = [
     {"nombre": "Juan Luis Guerra", "pais": "República Dominicana"}
 ]
 
+
 def iterarDiccionario(lista):
     for elemento in lista:
         print(f"Nombre - {elemento['nombre']}, País - {elemento['pais']}")
 
 
 iterarDiccionario(cantantes)
+
+print("------------------------------------")
+
+
+def iterarDiccionario2(llave, lista):
+    for elemento in lista:
+        print(elemento[llave])
+
+
+iterarDiccionario2("nombre", cantantes)
+iterarDiccionario2("pais", cantantes)
+
+print("------------------------------------")
+
+costa_rica = {
+    "ciudades": ["San José", "Limón", "Cartago", "Puntarenas"],
+    "comidas": ["gallo pinto", "casado", "tamales", "chifrijo", "olla de carne"]
+}
+
+
+def imprimirInformacion(diccionario):
+    for llave in diccionario:
+        lista = diccionario[llave]
+        print(f"{len(lista)} {(llave).upper()}")
+        for elemento in lista:
+            print(elemento)
+
+imprimirInformacion(costa_rica)
